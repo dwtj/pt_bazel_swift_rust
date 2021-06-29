@@ -24,6 +24,7 @@ cc_library(
 objc_library(
     name = "lib_objc",
     module_name = "pt_rs_lib",
+    enable_modules = True,
     hdrs = ["lib.objc.h"],
     deps = ["//pt/rs:lib_cc"],
     visibility = ["//visibility:public"],
